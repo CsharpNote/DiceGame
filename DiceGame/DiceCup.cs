@@ -19,13 +19,25 @@ namespace DiceGame
             die2 = new Die();
         }
 
-        // You must create a method with the below header:
-        // public void RollDice()
+        // Step 2a: RollDice: Should roll both dices in the cup. No value is returned.
+        public void RollDice()
+        {
+            die1.RollDie();
+            die2.RollDie();
+        }
 
-        // You must create a method with the below header:
-        // public int GetTotalValue()
+        // Step 2b: GetTotalValue: Should return the total value of the two dice in the cup.
+        public int GetTotalValue()
+        {
+            return (die1.GetValue() + die2.GetValue());
+        }
 
-        // You must create a method with the below header:
-        // public bool IsTotalValueLargerThan(int value)
+        // Step 2c: IsTotalValueLargerThan: This method should take one integer value as input, 
+        // and return either true or false. The return value should be true if the total value 
+        // of the two dice is larger than the input value; otherwise, it should return false.
+        public bool IsTotalValueLargerThan(int value)
+        {
+            return (GetTotalValue() > value);
+        }
     }
 }
