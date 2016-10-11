@@ -57,6 +57,18 @@ namespace DiceGame
         }
 
         // You must create a method with the below header:
-        // public bool IsTotalValueLargerThan(int value)
+         public bool IsTotalValueLargerThan(int value)
+        {
+            int terningeværdi;
+            bool checker;
+            terningeværdi = GetTotalValue();
+
+            checker = terningeværdi > value;
+
+            return checker;
+
+        }
+
+
     }
 }
