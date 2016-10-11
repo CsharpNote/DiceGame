@@ -24,7 +24,7 @@ namespace DiceGame
         // between 1 and 6 (both included).
         public void RollDie()
         {
-            value = generator.Next(6) + 1;
+            value = generator.Next(1,7) ;
         }
 
         public int GetValue()
