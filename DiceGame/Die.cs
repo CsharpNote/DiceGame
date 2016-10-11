@@ -11,8 +11,22 @@ namespace DiceGame
     {
         private int value;
         private Random generator;
+        private int antalSider;
 
         public Die()
+        {
+            this.antalSider = 6;
+            init();
+          
+        }
+
+        public Die(int antalsider):this()
+        {
+            this.antalSider = antalsider;
+            init();
+        }
+
+        private void init()
         {
             // The generator is used for generating random numbers
             generator = new Random();
@@ -24,7 +38,7 @@ namespace DiceGame
         // between 1 and 6 (both included).
         public void RollDie()
         {
-            value = generator.Next(1,7) ;
+            value = generator.Next(1,this.antalSider+1) ;
         }
 
         public int GetValue()
