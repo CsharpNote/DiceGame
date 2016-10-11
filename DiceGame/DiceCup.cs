@@ -46,12 +46,15 @@ namespace DiceGame
         }
 
 
-
-
-
-
         // You must create a method with the below header:
-        // public int GetTotalValue()
+        /// <summary>
+        /// returnerer værdierer fra de tre terninger
+        /// </summary>
+        /// <returns></returns>
+         public int GetTotalValue()
+        {
+            return die1red.GetValue() + die2.GetValue() + die3.GetValue();
+        }
 
         // You must create a method with the below header:
         // public bool IsTotalValueLargerThan(int value)
