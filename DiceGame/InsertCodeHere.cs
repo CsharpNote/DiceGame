@@ -9,6 +9,14 @@ namespace DiceGame
     {
         public void MyCode()
         {
+            //Die dicetusindudenforkop = new Die(1000);
+            //dicetusindudenforkop.RollDie();
+            //Console.WriteLine($"the value of the dice is {dicetusindudenforkop.GetValue()}");
+
+            //Die die87 = new Die(87);
+            //die87.RollDie();
+            //Console.WriteLine($"the value of the dice is {die87.GetValue()}");
+
             // The FIRST line of code should be BELOW this line
             //Die die1 = new Die();
             //Console.WriteLine($"the value of the dice is {die1.GetValue()}");
@@ -30,6 +38,8 @@ namespace DiceGame
             bool resultat = diceCup.IsTotalValueLargerThan(value1);
 
             Console.WriteLine($"Er samlet terninge værdi større end {value1} resutat:{resultat}");
+
+
 
 
             Console.ReadLine();
