@@ -9,6 +9,11 @@ namespace DiceGame
     {
         public void MyCode()
         {
+            //10 sidet terning
+            Die minDie = new Die(10);
+            minDie.RollDie();
+
+
             //Die dicetusindudenforkop = new Die(1000);
             //dicetusindudenforkop.RollDie();
             //Console.WriteLine($"the value of the dice is {dicetusindudenforkop.GetValue()}");
